@@ -1,0 +1,423 @@
+@font-face {
+	font-family: 'Eras Light ITC';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Eras Light ITC'), url('../fonts/ERASLGHT.woff') format('woff');
+}
+
+body{
+	background: url('../img/pattern-noise.png');
+	height: auto;
+	margin: 0;
+    padding: 0;
+}
+
+nav{
+	padding: 5 0 5 0;
+	margin-top: 180;
+}
+
+.navbar-brand{
+	height: 100%;
+}
+
+.navbar-brand img{
+	width: 170px;
+}
+
+nav li a{
+	text-transform: uppercase;
+	font-size: 20;
+}
+
+nav li{
+	margin: 0 15 0 15;
+}
+
+nav, .carousel-caption, .title, #titre, #subtitle{
+	font-family: "Eras Light ITC",  sans-serif;
+}
+
+#titre{
+	font-size: 95;
+	margin: 10 0 0 120;
+	height: 115;
+	color: #dc0000;
+	width: 500;
+}
+
+#subtitle{
+	font-size: 20;
+	margin-left: 120;
+	text-transform: uppercase;
+	color: #dc0000;
+	width: 400;
+}
+
+.navbar-inverse{
+	background-color: #c52c2e;
+	border-bottom: 1px solid red;
+	z-index: 9999;
+}
+
+.dropdown{
+	height: 110%;
+}
+
+.dropdown-menu{
+	background-color: black;
+	width: 200px;
+	top: 100%;
+	transition: visibility 0s linear 0.5s,opacity 0.5s linear;
+    visibility: hidden;
+  	opacity: 0;
+  	z-index: 1;
+}
+
+.navbar-nav > li:hover > .dropdown-menu{
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+.dropdown-menu li img{
+	width: 20px;
+	float: left;
+	margin-right: 8px;
+}
+
+.navbar-inverse .navbar-nav li > a{
+	color: #EEE;
+}
+
+.navbar-inverse .navbar-nav li > a:hover{
+	text-decoration: underline;
+}
+
+.navbar-inverse .navbar-nav > a, .navbar-inverse .navbar-nav > a:hover{
+	background-color: #FFF;
+}
+
+.navbar-nav{
+	float: left;
+}
+
+.navbar .container{
+	width: 90%;
+}
+
+.navbar-header{
+	border: none;
+}
+
+.navbar-inverse .navbar-toggle{
+	color: inherit;
+	border-color: white;
+}
+
+.navbar-inverse .navbar-toggle:hover{
+	background-color: inherit;
+}
+
+#page{
+	max-width: 400;
+}
+
+#zone_appareils{
+	float: right;
+	bottom: 150;
+	margin-right: 50;
+	position: relative;
+}
+
+#iphone{
+	position: relative;
+	height: 250;
+	left: 250;
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+    z-index: 3;
+}
+
+#xbox{
+	height: 280;
+	left: 100;
+	position: relative;
+	z-index: 4;
+}
+
+#wemo{
+	position: relative;
+	height: 250;
+	right: 20;
+	-ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+    z-index: 2;
+}
+
+#publications{
+	width: 900;
+	margin-left: 50;
+}
+
+.pub{
+	margin: 100 0 0 0;
+	display: inline-block;
+}
+
+.pub img{
+	width: 400;
+}
+
+.titre_pub{
+	background-color: rgba(0,0,0,0.6);
+	position: relative;
+	width: 100%;
+	height: 60;
+	bottom: 60;
+	color: white;
+	text-align: center;
+}
+
+#abonnements{
+
+}
+
+.carousel-caption{
+	background-color: rgba(0,0,0,0.6);
+	left: 0;
+	right: 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+
+footer h3{
+	text-transform: uppercase;
+	color: red;
+}
+
+.carousel-caption h5{
+	font-size: 15px;
+}
+
+footer a{
+	color : white;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	left: 0;
+	right: 0;
+	position: absolute;
+	border-top: 8px solid #d0d0d0;
+}
+
+.title{
+	color: #c00318;
+	padding-right: 20; 
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.carousel-caption .desc{
+	font-size: 14;
+}
+
+.carousel-inner > .item > img{
+	height: 100%;
+	max-width: none;
+}
+
+.row{
+	margin: auto;
+}
+
+.col-lg-4{
+	width: 160px;
+	margin: 0 100 0 100;
+}
+
+.img-circle, .title-expanded{
+	width: 160px;
+	height: 160px;
+}
+
+.img-circle{
+	border: 8px solid #d0d0d0;
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+	left: 15;
+}
+
+.col-lg-4:hover .title-expanded{
+	opacity: 1;
+}
+
+.title-expanded{
+	background-color: rgba(0,0,0,0.7);
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 50%;
+	position: relative;
+	background-position:top;
+	z-index: 1;
+	opacity: 0;
+	-webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+
+.title-expanded .title{
+	text-transform: uppercase;
+	color: #c00318;
+	padding: 60 0 5 0;
+}
+
+.title-expanded .date{
+	color: white;
+	font-size: 8;
+	font-weight: bold;
+}
+
+#twitter_title{
+	text-align: center;
+	font-style: italic;
+	font-size: 10;
+	padding: 10 0 10 0;
+	margin-top: -50;
+}
+
+#twitter{
+	text-align: center;
+	margin-bottom: -50;
+}
+
+#marketing_title{
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	padding: 10 0 10 0;
+	margin-bottom: 20;
+	text-transform: uppercase;
+	color: #c00318;
+	font-family: "Agency FB", bold;
+	font-size: 18;
+	-moz-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
+	-webkit-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
+	-o-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
+	box-shadow: inset 0px 8px 8px -5px #cfcfcf;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=180, Strength=8);
+	margin-top: 100;
+}
+
+footer .container{
+	min-width: 400px;
+}
+
+.span3{
+	display: inline-block;
+	margin-top: 30;
+	width: 33%;
+	position: relative;
+	min-width: 200;
+}
+
+footer *{
+	font-size: 10;
+	width: 20;
+	color: white;
+}
+
+footer .title{
+	width: 100%;
+}
+
+footer p{
+	display: inline-block;
+	width: 150;
+}
+
+footer hr{
+	width: 100%;
+	border-color: #c00318;
+}
+
+#credits{
+	width: 100%;
+	text-align: center;
+	font-size: 12;
+	margin-top: -10;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+	margin-left: 0;
+}
+
+@media screen and (max-width: 1350px){
+	#zone_appareils{
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 1300px){
+	#zone_appareils{
+		visibility: hidden;
+	}
+
+	nav li{
+		margin: 0 5 0 5;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.navbar-nav{
+		float: none;
+		margin-left: 0;
+	}
+
+	nav li{
+		margin: 0 18 0 18;
+	}
+
+	#titre, #subtitle{
+		margin-left: 50;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.navbar-nav{
+		margin-left: 0;
+	}
+
+	.navbar-nav li a > img{
+		float: left;
+		margin-right: 40;
+	}
+
+	.navbar-nav li{
+		padding: 20 0 20 0;
+	} 
+
+	.navbar-nav a{
+		height: 20;
+	}
+
+	.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+	    background-color: inherit;
+	}
+}
