@@ -15,17 +15,19 @@
 	<link href='css/style.css' rel='stylesheet' type='text/css'/>
 </head>
 <body>
-	<span id="page">
-		<div id="title">NewsGeeks</div>
-		<div id="subtitle">Le meilleur site sur l'actu numérique</div>
-	</span>
-	<span id="zone_appareils">
-		<img id="iphone" src="img/iphone.png"/>
-		<img id="xbox" src="img/xbox.png"/>
-		<img id="wemo" src="img/wemo.png"/>
-	</span>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
+	<div class="row head">
+		<div class="col-md-5" id="page">
+			<div id="title">NewsGeeks</div>
+			<div id="subtitle">Le meilleur site sur l'actu numérique</div>
+		</div>
+		<div id="zone_appareils">
+			<img id="iphone" src="img/iphone.png"/>
+			<img id="xbox" src="img/xbox.png"/>
+			<img id="wemo" src="img/wemo.png"/>
+		</div>
+	</div>
+	<nav class="navbar navbar-inverse">
+		<div class='container'>
   			<div class="navbar-header">
   				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 	  				<span class="sr-only">Toggle navigation</span>
@@ -64,18 +66,19 @@
   			</div>
   		</div>
 	</nav>
-
-	<div class="row">
-		<div class="pub col-lg-4">
-			<img src="img/open-graph-default.png"/>
-			<div class="titre_pub">Présentation de Spotify</div>
+	<div class="container">
+		<div class="row">
+			<div class="pub col-lg-4">
+				<img src="img/open-graph-default.png"/>
+				<div class="titre_pub">Présentation de Spotify</div>
+			</div>
+			<div class="pub col-lg-4">
+				<img src="img/open-graph-default.png"/>
+				<div class="titre_pub">Présentation de Spotify</div>
+			</div>
 		</div>
-		<div class="pub col-lg-4">
-			<img src="img/open-graph-default.png"/>
-			<div class="titre_pub">Présentation de Spotify</div>
+		<div id="abonnements">
 		</div>
-	</div>
-	<div id="abonnements">
 	</div>
 </body>
 </html>

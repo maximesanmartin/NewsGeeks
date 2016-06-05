@@ -7,14 +7,15 @@
 
 body{
 	background: url('../img/pattern-noise.png');
-	height: auto;
 	margin: 0;
     padding: 0;
 }
 
-nav{
-	padding: 5 0;
-	margin-top: 180;
+.navbar-inverse{
+	background-color: #c52c2e;
+	border: none;
+	border-radius: 0;
+	z-index: 9999;
 }
 
 nav li a{
@@ -29,55 +30,6 @@ nav, #title, #subtitle{
 	font-family: "Eras Light ITC",  sans-serif;
 }
 
-#title{
-	font-size: 95;
-	margin: 10 0 0 120;
-	height: 115;
-	color: #dc0000;
-	width: 500;
-}
-
-#subtitle{
-	font-size: 20;
-	margin-left: 120;
-	text-transform: uppercase;
-	color: #dc0000;
-	width: 400;
-}
-
-.navbar-inverse{
-	background-color: #c52c2e;
-	border-bottom: 1px solid red;
-	z-index: 9999;
-	position: absolute;
-}
-
-.dropdown{
-	height: 110%;
-}
-
-.dropdown-menu{
-	background-color: black;
-	width: 200px;
-	top: 100%;
-	transition: visibility 0s linear 0.5s,opacity 0.5s linear;
-    visibility: hidden;
-  	opacity: 0;
-  	z-index: 1;
-}
-
-.navbar-nav > li:hover > .dropdown-menu{
-	visibility: visible;
-	opacity: 1;
-	transition-delay: 0s;
-}
-
-.dropdown-menu li img{
-	width: 20px;
-	float: left;
-	margin-right: 8px;
-}
-
 .navbar-inverse .navbar-nav li > a{
 	color: #EEE;
 }
@@ -88,10 +40,6 @@ nav, #title, #subtitle{
 
 .navbar-inverse .navbar-nav > a, .navbar-inverse .navbar-nav > a:hover{
 	background-color: #FFF;
-}
-
-.navbar .container{
-	width: 90%;
 }
 
 .navbar-header{
@@ -115,15 +63,34 @@ nav, #title, #subtitle{
 	margin-left: 0;
 }
 
+.head{
+	height: 200px;
+}
+
+#title{
+	font-size: 95;
+	margin: 10 0 0 120;
+	height: 115;
+	color: #dc0000;
+	width: 500;
+}
+
+#subtitle{
+	font-size: 20;
+	margin-left: 120;
+	text-transform: uppercase;
+	color: #dc0000;
+	width: 400;
+}
+
 #page{
 	max-width: 400;
 }
 
 #zone_appareils{
 	float: right;
-	bottom: 150;
-	margin-right: 50;
-	position: relative;
+	margin-right: 20;
+	height: 100%;
 }
 
 #iphone{
@@ -154,7 +121,7 @@ nav, #title, #subtitle{
 }
 
 .pub img{
-	width: 400;
+	width: 100%;
 }
 
 .titre_pub{
@@ -171,26 +138,9 @@ nav, #title, #subtitle{
 
 }
 
-.title{
-	color: #c00318;
-	padding-right: 20; 
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
 @media screen and (max-width: 1350px){
 	#zone_appareils{
-		margin-right: 0;
-	}
-}
-
-@media screen and (max-width: 1300px){
-	#zone_appareils{
-		visibility: hidden;
-	}
-
-	nav li{
-		margin: 0 5 0 5;
+		display: none;
 	}
 }
 
@@ -204,7 +154,7 @@ nav, #title, #subtitle{
 		margin: 0 18 0 18;
 	}
 
-	#titre, #subtitle{
+	#title, #subtitle{
 		margin-left: 50;
 	}
 }
