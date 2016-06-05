@@ -13,32 +13,23 @@ body{
 }
 
 nav{
-	padding: 5 0 5 0;
+	padding: 5 0;
 	margin-top: 180;
 }
 
-.navbar-brand{
-	height: 100%;
-}
-
-.navbar-brand img{
-	width: 170px;
-}
-
 nav li a{
-	text-transform: uppercase;
 	font-size: 20;
 }
 
 nav li{
-	margin: 0 15 0 15;
+	margin: 0 15;
 }
 
-nav, .carousel-caption, .title, #titre, #subtitle{
+nav, #title, #subtitle{
 	font-family: "Eras Light ITC",  sans-serif;
 }
 
-#titre{
+#title{
 	font-size: 95;
 	margin: 10 0 0 120;
 	height: 115;
@@ -58,6 +49,7 @@ nav, .carousel-caption, .title, #titre, #subtitle{
 	background-color: #c52c2e;
 	border-bottom: 1px solid red;
 	z-index: 9999;
+	position: absolute;
 }
 
 .dropdown{
@@ -98,10 +90,6 @@ nav, .carousel-caption, .title, #titre, #subtitle{
 	background-color: #FFF;
 }
 
-.navbar-nav{
-	float: left;
-}
-
 .navbar .container{
 	width: 90%;
 }
@@ -115,8 +103,16 @@ nav, .carousel-caption, .title, #titre, #subtitle{
 	border-color: white;
 }
 
-.navbar-inverse .navbar-toggle:hover{
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
 	background-color: inherit;
+}
+
+.navbar-collapse{
+	border: none;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
+	margin-left: 0;
 }
 
 #page{
@@ -157,16 +153,6 @@ nav, .carousel-caption, .title, #titre, #subtitle{
     z-index: 2;
 }
 
-#publications{
-	width: 900;
-	margin-left: 50;
-}
-
-.pub{
-	margin: 100 0 0 0;
-	display: inline-block;
-}
-
 .pub img{
 	width: 400;
 }
@@ -185,187 +171,11 @@ nav, .carousel-caption, .title, #titre, #subtitle{
 
 }
 
-.carousel-caption{
-	background-color: rgba(0,0,0,0.6);
-	left: 0;
-	right: 0;
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-}
-
-footer h3{
-	text-transform: uppercase;
-	color: red;
-}
-
-.carousel-caption h5{
-	font-size: 15px;
-}
-
-footer a{
-	color : white;
-}
-
-footer{
-	background-color: black;
-	width: 100%;
-	left: 0;
-	right: 0;
-	position: absolute;
-	border-top: 8px solid #d0d0d0;
-}
-
 .title{
 	color: #c00318;
 	padding-right: 20; 
 	font-size: 20px;
 	text-transform: uppercase;
-}
-
-.carousel-caption .desc{
-	font-size: 14;
-}
-
-.carousel-inner > .item > img{
-	height: 100%;
-	max-width: none;
-}
-
-.row{
-	margin: auto;
-}
-
-.col-lg-4{
-	width: 160px;
-	margin: 0 100 0 100;
-}
-
-.img-circle, .title-expanded{
-	width: 160px;
-	height: 160px;
-}
-
-.img-circle{
-	border: 8px solid #d0d0d0;
-	position: absolute;
-	bottom: 0;
-	z-index: 0;
-	left: 15;
-}
-
-.col-lg-4:hover .title-expanded{
-	opacity: 1;
-}
-
-.title-expanded{
-	background-color: rgba(0,0,0,0.7);
-	margin-right: auto;
-	margin-left: auto;
-	border-radius: 50%;
-	position: relative;
-	background-position:top;
-	z-index: 1;
-	opacity: 0;
-	-webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
-}
-
-.title-expanded .title{
-	text-transform: uppercase;
-	color: #c00318;
-	padding: 60 0 5 0;
-}
-
-.title-expanded .date{
-	color: white;
-	font-size: 8;
-	font-weight: bold;
-}
-
-#twitter_title{
-	text-align: center;
-	font-style: italic;
-	font-size: 10;
-	padding: 10 0 10 0;
-	margin-top: -50;
-}
-
-#twitter{
-	text-align: center;
-	margin-bottom: -50;
-}
-
-#marketing_title{
-	width: 100%;
-	text-align: center;
-	background-color: white;
-	padding: 10 0 10 0;
-	margin-bottom: 20;
-	text-transform: uppercase;
-	color: #c00318;
-	font-family: "Agency FB", bold;
-	font-size: 18;
-	-moz-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
-	-webkit-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
-	-o-box-shadow: inset 0px 8px 8px -5px #cfcfcf;
-	box-shadow: inset 0px 8px 8px -5px #cfcfcf;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=180, Strength=8);
-	margin-top: 100;
-}
-
-footer .container{
-	min-width: 400px;
-}
-
-.span3{
-	display: inline-block;
-	margin-top: 30;
-	width: 33%;
-	position: relative;
-	min-width: 200;
-}
-
-footer *{
-	font-size: 10;
-	width: 20;
-	color: white;
-}
-
-footer .title{
-	width: 100%;
-}
-
-footer p{
-	display: inline-block;
-	width: 150;
-}
-
-footer hr{
-	width: 100%;
-	border-color: #c00318;
-}
-
-#credits{
-	width: 100%;
-	text-align: center;
-	font-size: 12;
-	margin-top: -10;
-}
-
-.left{
-	float: left;
-}
-
-.right{
-	float: right;
-}
-
-.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand{
-	margin-left: 0;
 }
 
 @media screen and (max-width: 1350px){
