@@ -74,7 +74,7 @@
 			</div>
 			<div class="pub col-lg-5">
 				<img src="img/open-graph-default.png"/>
-				<div class="titre_pub">Présentation de Spotify</div>
+				<div class="titre_pub">Présentation de Spotify HAHAHAHHAHAHAHAHAHAHHAAHAHAHAHAHH</div>
 			</div>
 			<div class="pub col-lg-5">
 				<img src="img/open-graph-default.png"/>
@@ -90,3 +90,13 @@
 	</div>
 </body>
 </html>
+<script>
+	$(".pub img").hover(
+		function(){
+			$(this).parent().find(".titre_pub").css("visibility", "visible").animate({bottom: "80px", opacity: "1"},500);
+		},
+		function(){
+			$(this).parent().find(".titre_pub").animate({bottom: "0px", opacity: "0"},200);
+		}
+	);
+</script>

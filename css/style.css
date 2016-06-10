@@ -135,11 +135,13 @@ nav, #title, #subtitle{
 	background-color: rgba(0,0,0,0.6);
 	position: relative;
 	width: 100%;
-	bottom: 30;
-	padding: 5 0;
+	height: 80px;
 	color: white;
 	text-align: center;
-	font-size: 20;
+	font-size: 28;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .abos{
