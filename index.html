@@ -4,13 +4,14 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="icon" href="img/ng.png">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-	<script src="js/bootstrap.js"></script>
-	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href='css/style.css' rel='stylesheet' type='text/css'/>
 </head>
@@ -39,28 +40,25 @@
   			<div id="navbar" class="collapse navbar-collapse">
 	  			<ul class="nav navbar-nav">
 	  				<li>
-	  					<a href="presentation.html">Accueil</a>
+	  					<a href="presentation.html">ACCUEIL</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">Jeux</a>
+	  					<a href="presentation.html">JEUX</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">Cinéma</a>
+	  					<a href="presentation.html">CINEMA</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">Vidéo</a>
+	  					<a href="presentation.html">VIDEOS</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">High-Tech</a>
+	  					<a href="presentation.html">HIGH-TECH</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">Découverte</a>
+	  					<a href="presentation.html">CONTACT</a>
 	  				</li>
 	  				<li>
-	  					<a href="presentation.html">Contact</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">A Propos</a>
+	  					<a href="presentation.html">A PROPOS</a>
 	  				</li>
 	  			</ul>
   			</div>
@@ -68,35 +66,44 @@
 	</nav>
 	<div class="row">
 		<div class="col-lg-8">
-			<div class="pub col-lg-5">
-				<img src="img/open-graph-default.png"/>
-				<div class="titre_pub">Présentation de Spotify</div>
+			<div class="pub col-lg-12">
+				<div class="image col-lg-5">
+					<img src="img/LG-logo.png">
+				</div>
+				<div class="col-lg-7">
+					<h2 class="titre_pub">LG prépare de nouveaux produits</h2>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
 			</div>
-			<div class="pub col-lg-5">
-				<img src="img/open-graph-default.png"/>
-				<div class="titre_pub">Présentation de Spotify HAHAHAHHAHAHAHAHAHAHHAAHAHAHAHAHH</div>
-			</div>
-			<div class="pub col-lg-5">
-				<img src="img/open-graph-default.png"/>
-				<div class="titre_pub">Présentation de Spotify</div>
-			</div>
-			<div class="pub col-lg-5">
-				<img src="img/open-graph-default.png"/>
-				<div class="titre_pub">Présentation de Spotify</div>
+			<div class="pub col-lg-12">
+				<div class="image col-lg-5">
+					<img src="img/open-graph-default.png">
+				</div>
+				<div class="col-lg-7">
+					<h2 class="titre_pub">Spotify dévoile ses dernières fonctionnalités</h2>
+					<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-lg-4 abos">
+			<h2>Nos réseaux sociaux !</h2>
+			<div class="row container">
+				<img src="img/facebook.png">
+				<img src="img/twitter.png">
+				<img src="img/youtube.png">
+				<img src="img/twitch.png">
+			</div>
 		</div>
 	</div>
 </body>
 </html>
-<script>
-	$(".pub img").hover(
-		function(){
-			$(this).parent().find(".titre_pub").css("visibility", "visible").animate({bottom: "80px", opacity: "1"},500);
-		},
-		function(){
-			$(this).parent().find(".titre_pub").animate({bottom: "0px", opacity: "0"},200);
-		}
-	);
-</script>

@@ -124,29 +124,45 @@ nav, #title, #subtitle{
 }
 
 .pub{
-	text-align: center;
+	background-color: #FFF;
+	border: 4px solid #DDD;
+	margin-bottom: 10px;
 }
 
-.pub img{
-	width: 100%;
+.pub *{
+	color: #444;
+}
+
+.pub .image{
+	text-align: center;
+	display: table-cell;
+  	vertical-align: middle;
+	height: 250px;
+}
+
+.pub .image img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
 }
 
 .titre_pub{
-	background-color: rgba(0,0,0,0.6);
-	position: relative;
-	width: 100%;
-	height: 80px;
-	color: white;
-	text-align: center;
-	font-size: 28;
+	text-align: left;
 	overflow: hidden;
-	visibility: hidden;
-	opacity: 0;
 }
 
 .abos{
-	background-color: black;
-	height: 200px;
+	background-color: #FFF;
+	border: 4px solid #DDD;
+}
+
+.abos img{
+	width: 15%;
+	margin: 0 10px;
+}
+
+.abos{
+	padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1350px){
