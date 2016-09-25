@@ -133,6 +133,18 @@ nav, #title, #subtitle{
 	margin: 0;
 }
 
+.author{
+	position: absolute;
+	color: #333;
+	top: 10%;
+	left: -70px;
+}
+
+.author .img-circle{
+	border: 4px solid #eee;
+	border-radius: 50%;
+}
+
 .article{
 	background-color: #FFF;
 	color : #454545;
@@ -162,7 +174,7 @@ nav, #title, #subtitle{
 	border: 4px solid #CB2D2D;
 	border-radius: 50%;
 	padding: 60 20;
-	top: 35%;
+	top: 45%;
 	left: -70px;
 }
 
