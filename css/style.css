@@ -172,12 +172,22 @@ nav, #title, #subtitle{
 	max-width: 100%;
 }
 
+.comment{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10;
+	margin-bottom: 10;
+}
+
 .comments textarea{
 	width: 100%;
 	resize: vertical;
-	border: 1px solid #eee;
-	padding: 10;
-	margin-bottom: 10;
+	
+}
+
+.comments input{
+	width: 50%;
+	padding: 6;
 }
 
 .comments .btn{
