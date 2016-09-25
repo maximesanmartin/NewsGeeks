@@ -172,6 +172,24 @@ nav, #title, #subtitle{
 	max-width: 100%;
 }
 
+.comments textarea{
+	width: 100%;
+	resize: vertical;
+	border: 1px solid #eee;
+	padding: 10;
+	margin-bottom: 10;
+}
+
+.comments .btn{
+	width: 100px;
+	border-radius: 5%;
+	margin-bottom: 10;
+}
+
+.other hr{
+	margin: 10 0;
+}
+
 .twitter{
 	background-color: white;
 	max-height: 1000px;
@@ -195,7 +213,7 @@ ul{
 }
 
 .footer .social_icons .fa{
-	margin-right: 10;
+	margin: 10 10 0 0;
 	width: 80px;
 	padding: 18 0;
 	border: 1px solid #eee;
@@ -207,6 +225,10 @@ ul{
 .footer .social_icons .fa:hover{
 	background-color: #fff;
 	color: #C93030;
+}
+
+.copyright{
+	text-align: center;
 }
 
 @media screen and (max-width: 1350px){
