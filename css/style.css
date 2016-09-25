@@ -16,7 +16,7 @@ a{
 	color: #eee;
 }
 
-.navbar-inverse, .head, .footer, .date_pub{
+.navbar-inverse, .head, .footer{
 	background-color: #C93030;
 }
 
@@ -136,12 +136,12 @@ nav, #title, #subtitle{
 .author{
 	position: absolute;
 	color: #333;
-	top: 10%;
+	top: 5%;
 	left: -70px;
 }
 
 .author .img-circle{
-	border: 4px solid #eee;
+	border: 4px solid #e8e8e8;
 	border-radius: 50%;
 }
 
@@ -160,22 +160,16 @@ nav, #title, #subtitle{
 	padding: 0;
 }
 
+.info{
+	margin: 10px;
+}
+
 .article p{
 	margin: 15 0;
 }
 
 .article img{
 	max-width: 100%;
-}
-
-.date_pub{
-	color: #EEE;
-	position: absolute;
-	border: 4px solid #CB2D2D;
-	border-radius: 50%;
-	padding: 60 20;
-	top: 45%;
-	left: -70px;
 }
 
 .twitter{
@@ -239,15 +233,12 @@ ul{
 		padding: 0;
 	}
 
-	.date_pub{
-		border: none;
-		border-radius: 0;
-		background-color: inherit;
-		top: 80%;
-		left: 0;
-		opacity: 1;
-		z-index: 8000;
-		text-decoration: underline;
+	.main_image{
+		height: 350px;
+	}
+
+	.main_image h1{
+		padding: 20 0;
 	}
 }
 
@@ -277,5 +268,16 @@ ul{
 
 	.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
 	    background-color: inherit;
+	}
+
+	.author{
+		color: #333;
+		top: 0%;
+		left: 0px;
+	}
+
+	.author .img-circle{
+		border: 4px solid #eee;
+		border-radius: 0;
 	}
 }
