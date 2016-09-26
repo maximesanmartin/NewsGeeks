@@ -172,7 +172,7 @@ nav, #title, #subtitle{
 	max-width: 100%;
 }
 
-.comment{
+.input{
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 10;
@@ -182,7 +182,6 @@ nav, #title, #subtitle{
 .comments textarea{
 	width: 100%;
 	resize: vertical;
-	
 }
 
 .comments input{
@@ -194,6 +193,21 @@ nav, #title, #subtitle{
 	width: 100px;
 	border-radius: 5%;
 	margin-bottom: 10;
+}
+
+.comment div > *{
+	display: inline;
+}
+
+.comment div .img-circle{
+	width: 12%;
+	border: 3px solid #ddd;
+}
+
+.comment div p{
+	width: 85%;
+	margin-top: 0; 
+	float: right;
 }
 
 .other hr{
@@ -224,7 +238,7 @@ ul{
 
 .footer .social_icons .fa{
 	margin: 10 10 0 0;
-	width: 80px;
+	width: 65px;
 	padding: 18 0;
 	border: 1px solid #eee;
 	border-radius: 50%;
@@ -272,6 +286,18 @@ ul{
 	.main_image h1{
 		padding: 15 0;
 		font-size: 25;
+	}
+
+	.twitter{
+		overflow: hidden;
+	}
+
+	.comment div p{
+		width: 100%;
+	}
+
+	.comment div .img-circle{
+		display: none;
 	}
 }
 
