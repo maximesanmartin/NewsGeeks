@@ -16,6 +16,8 @@ a{
 	color: #eee;
 }
 
+/* ======================= NAVBAR ======================= */
+
 .navbar-inverse, .head, .footer{
 	background-color: #C93030;
 }
@@ -71,6 +73,8 @@ nav, #title, #subtitle{
 	margin-left: 0;
 }
 
+/* ======================= HEADER ======================= */
+
 .row{
 	width: 100%;
 	margin: 0;
@@ -90,6 +94,10 @@ nav, #title, #subtitle{
     width: 100%;
 }
 
+#page{
+	margin: 120 0;
+}
+
 #title{
 	font-size: 95;
 	margin: 0 0 0 120;
@@ -106,8 +114,29 @@ nav, #title, #subtitle{
 	width: 400;
 }
 
-#page{
-	margin: 120 0;
+/* ======================== ARTICLE ======================= */
+
+.article p{
+	margin: 15 0;
+}
+
+.article img{
+	max-width: 100%;
+}
+
+.article{
+	background-color: #FFF;
+	color : #454545;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.article > *{
+	padding: 0 20;
+}
+
+.article .main_image{
+	padding: 0;
 }
 
 .main_image{
@@ -138,6 +167,11 @@ nav, #title, #subtitle{
 	color: #333;
 	top: 15%;
 	left: -70px;
+	transition: all ease 0.6s;
+}
+
+.author:hover{
+	background-color: #e8e8e8;
 }
 
 .author .img-circle{
@@ -145,39 +179,16 @@ nav, #title, #subtitle{
 	border-radius: 50%;
 }
 
-.article{
-	background-color: #FFF;
-	color : #454545;
-	padding: 0;
-	margin-bottom: 20px;
-}
-
-.article > *{
-	padding: 0 20;
-}
-
-.article .main_image{
-	padding: 0;
+.author_name{
+	text-align: center;
+	display: none;
 }
 
 .info{
 	margin: 10px;
 }
 
-.article p{
-	margin: 15 0;
-}
-
-.article img{
-	max-width: 100%;
-}
-
-.input{
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 10;
-	margin-bottom: 10;
-}
+/* ====================== COMMENTS ===================== */
 
 .comments textarea{
 	width: 100%;
@@ -210,7 +221,16 @@ nav, #title, #subtitle{
 	float: right;
 }
 
-.other hr{
+.input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10;
+	margin-bottom: 10;
+}
+
+/* ========================= SIDEBAR =========================== */
+
+.sidebar hr{
 	margin: 10 0;
 }
 
@@ -224,6 +244,8 @@ nav, #title, #subtitle{
 	background-color: #fff;
 	margin-top: 20px;
 }
+
+/* ========================== FOOTER ============================ */
 
 .footer{
 	color: #FFF;
@@ -255,13 +277,13 @@ ul{
 	text-align: center;
 }
 
-@media screen and (max-width: 1350px){
-	#zone_appareils{
-		display: none;
-	}
-}
+/* ============================================================== */
+/* ======================== MEDIA QUERIES ======================= */
+/* ============================================================== */
 
 @media screen and (max-width: 1000px){
+	/* ========================= NAVBAR ========================= */
+
 	.navbar-nav{
 		float: none;
 		margin-left: 0;
@@ -271,13 +293,13 @@ ul{
 		margin: 0 18 0 18;
 	}
 
+	/* ========================= HEADER ========================== */
+
 	#title, #subtitle{
 		margin-left: 50;
 	}
 
-	.other{
-		padding: 0;
-	}
+	/* ========================= ARTICLE ========================= */
 
 	.main_image{
 		height: 300px;
@@ -288,9 +310,7 @@ ul{
 		font-size: 25;
 	}
 
-	.twitter{
-		overflow: hidden;
-	}
+	/* ========================= COMMENTS ======================== */
 
 	.comment div p{
 		width: 100%;
@@ -299,9 +319,22 @@ ul{
 	.comment div .img-circle{
 		display: none;
 	}
+
+	/* ========================= SIDEBAR ========================== */
+
+	.sidebar{
+		padding: 0;
+	}
+
+	.twitter{
+		overflow: hidden;
+	}
 }
 
 @media screen and (max-width: 800px){
+
+	/* ======================== HEADER ============================ */
+
 	.row{
 		width: auto;
 	}
@@ -317,6 +350,20 @@ ul{
 		text-align: center;
 	}
 
+	#title{
+		font-size: 70;
+	}
+
+	#page{
+		margin: 130 0 0 0;
+	}
+
+	.head{
+		height: 200px;
+	}
+
+	/* =========================== NAVBAR ======================== */
+
 	.navbar-nav li{
 		padding: 20 0 20 0;
 	} 
@@ -329,6 +376,8 @@ ul{
 	    background-color: inherit;
 	}
 
+	/* =========================== ARTICLE ======================== */
+
 	.author{
 		color: #333;
 		top: 0%;
@@ -339,17 +388,5 @@ ul{
 		border: 4px solid #eee;
 		border-radius: 0;
 		width: 100px;
-	}
-
-	#title{
-		font-size: 70;
-	}
-
-	#page{
-		margin: 130 0 0 0;
-	}
-
-	.head{
-		height: 200px;
 	}
 }
