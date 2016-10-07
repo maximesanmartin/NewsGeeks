@@ -1,65 +1,8 @@
 <html>
-<head>
-	<title>NewsGeeks - Le site des nouvelles technologies</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="icon" href="img/ng.png">
-	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet"> 
-	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href='css/style.css' rel='stylesheet' type='text/css'/>
-</head>
+<?php include("header.php"); ?>
+<link rel="stylesheet" type="text/css" href="css/article.css">
 <body>
-	<div class="head">
-		<div class="col-md-5" id="page">
-			<div id="title">NewsGeeks</div>
-			<div id="subtitle">Le meilleur site sur l'actu numérique</div>
-		</div>
-	</div>
-	<nav class="navbar navbar-inverse">
-		<div class='container'>
-  			<div class="navbar-header">
-  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	  				<span class="sr-only">Toggle navigation</span>
-	  				<span class="icon-bar"></span>
-	  				<span class="icon-bar"></span>
-	  				<span class="icon-bar"></span>
-  				</button>
-  			</div>
-  			<div id="navbar" class="collapse navbar-collapse">
-	  			<ul class="nav navbar-nav">
-	  				<li>
-	  					<a href="presentation.html">ACCUEIL</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">JEUX</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">CINEMA</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">VIDEOS</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">HIGH-TECH</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">CONTACT</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">A PROPOS</a>
-	  				</li>
-	  			</ul>
-  			</div>
-  		</div>
-	</nav>
+	<?php include("navbar.php"); ?>
 	<div class="container">
 		<div class="col-md-9 article">
 			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
@@ -136,50 +79,6 @@
 			</div>
 		</div>
 	</div>
-	<footer class="footer">
-		<div class="container">
-			<div class="col-md-4">
-				<h4>Navigation</h4>
-				<ul>
-	  				<li>
-	  					<a href="presentation.html">ACCUEIL</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">JEUX</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">CINEMA</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">VIDEOS</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">HIGH-TECH</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">CONTACT</a>
-	  				</li>
-	  				<li>
-	  					<a href="presentation.html">A PROPOS</a>
-	  				</li>
-	  			</ul>
-			</div>
-			<div class="col-md-4">
-				<h4>Nos réseaux</h4>
-				<div class="social_icons">
-					<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-					<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-					<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-					<i class="fa fa-twitch fa-2x" aria-hidden="true"></i>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<h4>Notre activité</h4>
-				<p>NewsGeeks a pour objectif de communiquer nos passions pour les nouvelles technologies, ainsi que les dernières informations du moment dans le domaine du web, des jeux-vidéos, du cinéma, et bien d'autres encore !</p>
-				<p>Nous ne sommes dépendants d'aucun sponsor</p>
-			</div>
-			<div class="col-md-12 copyright"><hr>NewsGeeks 2012-2016 - Tous droits réservés. Site web développé sous HTML5/CSS3, JQuery et Bootstrap par Maxime SANMARTIN</div>
-		</div>
-	</footer>
+	<?php include("footer.php"); ?>
 </body>
 </html>

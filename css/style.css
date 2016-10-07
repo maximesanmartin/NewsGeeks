@@ -36,7 +36,7 @@ nav li{
 	margin: 0 15;
 }
 
-nav, #title, #subtitle{
+nav, #title{
 	font-family: "Eras Light ITC",  sans-serif;
 }
 
@@ -92,157 +92,15 @@ nav, #title, #subtitle{
     min-height: 12rem;
     position: relative;
     width: 100%;
-}
-
-#page{
-	margin: 120 0;
+    line-height: 400px;
 }
 
 #title{
 	font-size: 95;
 	margin: 0 0 0 120;
-	height: 115;
 	color: #FFF;
-	width: 500;
-}
-
-#subtitle{
-	font-size: 20;
-	margin-left: 120;
-	text-transform: uppercase;
-	color: #FFF;
-	width: 400;
-}
-
-/* ======================== ARTICLE ======================= */
-
-.article p{
-	margin: 15 0;
-}
-
-.article img{
-	max-width: 100%;
-}
-
-.article{
-	background-color: #FFF;
-	color : #454545;
-	padding: 0;
-	margin-bottom: 20px;
-}
-
-.article > *{
-	padding: 0 20;
-}
-
-.article .main_image{
-	padding: 0;
-}
-
-.main_image{
-	height: 500px;
-    -moz-box-align: end;
-    align-items: flex-end;
-    background-position: 50% center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    min-height: 12rem;
-    position: relative;
-    width: 100%;
-}
-
-.main_image h1{
-	text-align: center;
-	color: #FFF;
-	width: 100%;
-	background-color: #333;
-	opacity: 0.7;
-	padding: 35 0;
-	margin: 0;
-}
-
-.author{
-	position: absolute;
-	color: #333;
-	top: 15%;
-	left: -70px;
-	transition: all ease 0.6s;
-}
-
-.author:hover{
-	background-color: #e8e8e8;
-}
-
-.author .img-circle{
-	border: 4px solid #e8e8e8;
-	border-radius: 50%;
-}
-
-.author_name{
-	text-align: center;
-	display: none;
-}
-
-.info{
-	margin: 10px;
-}
-
-/* ====================== COMMENTS ===================== */
-
-.comments textarea{
-	width: 100%;
-	resize: vertical;
-}
-
-.comments input{
-	width: 50%;
-	padding: 6;
-}
-
-.comments .btn{
-	width: 100px;
-	border-radius: 5%;
-	margin-bottom: 10;
-}
-
-.comment div > *{
-	display: inline;
-}
-
-.comment div .img-circle{
-	width: 12%;
-	border: 3px solid #ddd;
-}
-
-.comment div p{
-	width: 85%;
-	margin-top: 0; 
-	float: right;
-}
-
-.input{
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 10;
-	margin-bottom: 10;
-}
-
-/* ========================= SIDEBAR =========================== */
-
-.sidebar hr{
-	margin: 10 0;
-}
-
-.twitter{
-	background-color: white;
-	max-height: 1000px;
-	overflow: scroll;
-}
-
-.trends{
-	background-color: #fff;
-	margin-top: 20px;
+	vertical-align: middle;
+	display: inline-block;
 }
 
 /* ========================== FOOTER ============================ */
@@ -295,39 +153,8 @@ ul{
 
 	/* ========================= HEADER ========================== */
 
-	#title, #subtitle{
+	#title{
 		margin-left: 50;
-	}
-
-	/* ========================= ARTICLE ========================= */
-
-	.main_image{
-		height: 300px;
-	}
-
-	.main_image h1{
-		padding: 15 0;
-		font-size: 25;
-	}
-
-	/* ========================= COMMENTS ======================== */
-
-	.comment div p{
-		width: 100%;
-	}
-
-	.comment div .img-circle{
-		display: none;
-	}
-
-	/* ========================= SIDEBAR ========================== */
-
-	.sidebar{
-		padding: 0;
-	}
-
-	.twitter{
-		overflow: hidden;
 	}
 }
 
@@ -339,27 +166,18 @@ ul{
 		width: auto;
 	}
 
-	#page, #page > *{
+	#title{
 		width: 100%;
 		max-width: none;
 		margin-left: 0;
 		padding: 20 0 0 0;
-	}
-	
-	#title, #subtitle{
 		text-align: center;
-	}
-
-	#title{
 		font-size: 70;
-	}
-
-	#page{
-		margin: 130 0 0 0;
 	}
 
 	.head{
 		height: 200px;
+		line-height: 200px;
 	}
 
 	/* =========================== NAVBAR ======================== */
@@ -374,19 +192,5 @@ ul{
 
 	.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
 	    background-color: inherit;
-	}
-
-	/* =========================== ARTICLE ======================== */
-
-	.author{
-		color: #333;
-		top: 0%;
-		left: 0px;
-	}
-
-	.author .img-circle{
-		border: 4px solid #eee;
-		border-radius: 0;
-		width: 100px;
 	}
 }
