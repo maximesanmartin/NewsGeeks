@@ -4,32 +4,32 @@
 			<h4>Navigation</h4>
 			<ul>
   				<li>
-  					<a href="presentation.html">ACCUEIL</a>
+  					<a href="index.php">ACCUEIL</a>
   				</li>
   				<li>
-  					<a href="presentation.html">JEUX</a>
+  					<a href="page.php?id=jeux">JEUX</a>
   				</li>
   				<li>
-  					<a href="presentation.html">CINEMA</a>
+  					<a href="page.php?id=cinema">CINEMA</a>
   				</li>
   				<li>
-  					<a href="presentation.html">HIGH-TECH</a>
+  					<a href="page.php?id=high-tech">HIGH-TECH</a>
   				</li>
   				<li>
-  					<a href="presentation.html">CONTACT</a>
+  					<a href="contact.php">CONTACT</a>
   				</li>
   				<li>
-  					<a href="presentation.html">A PROPOS</a>
+  					<a href="about.php">A PROPOS</a>
   				</li>
   			</ul>
 		</div>
 		<div class="col-md-4">
 			<h4>Nos réseaux</h4>
 			<div class="social_icons">
-				<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-				<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-				<i class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-				<i class="fa fa-twitch fa-2x" aria-hidden="true"></i>
+				<a href="https://twitter.com/NewsGeeks_FLM"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.facebook.com/NewsGeeksFLM/?fref=ts"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.youtube.com/user/SuperSageto"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.twitch.tv/newsgeeks_gaming"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class="col-md-4">

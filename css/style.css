@@ -16,6 +16,11 @@ a{
 	color: #eee;
 }
 
+a:focus{
+	color: inherit;
+	outline: 0;
+}
+
 /* ======================= NAVBAR ======================= */
 
 .navbar-inverse, .head, .footer{
@@ -82,7 +87,7 @@ nav, #title{
 
 .head{
 	height: 400px;
-	background-image: url("../img/bg.jpg");
+	background-image: url("../img/banner.jpg");
 	-moz-box-align: end;
     align-items: flex-end;
     background-position: 50% center;
@@ -166,6 +171,11 @@ ul{
 		width: auto;
 	}
 
+	.head{
+		height: 200px;
+		line-height: 200px;
+	}
+
 	#title{
 		width: 100%;
 		max-width: none;
@@ -175,9 +185,8 @@ ul{
 		font-size: 70;
 	}
 
-	.head{
-		height: 200px;
-		line-height: 200px;
+	#title img{
+		height: 100px;
 	}
 
 	/* =========================== NAVBAR ======================== */
