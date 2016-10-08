@@ -1,10 +1,11 @@
 <html>
 <?php include("header.php"); ?>
 <link rel="stylesheet" type="text/css" href="css/article.css">
+<script type="text/javascript" src="js/article.js"></script>
 <body>
 	<?php include("navbar.php"); ?>
 	<div class="container">
-		<div class="col-md-9 article">
+		<div class="col-md-8 article">
 			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
 				<div class="author"><img src="img/max.jpg" class="img-circle"><div class="author_name">Maxime Sanmartin</div></div>
 				<h1>Les grandes avancées du lecteur de Spotify</h1>
@@ -62,23 +63,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 sidebar">
+		<div class="col-md-4 sidebar">
 			<div class="col-md-12 twitter">
 				<h2>Actu Twitter</h2>
 				<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM">Tweets de NewsGeeks_FLM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
-			<div class="col-md-12 trends">
-				<h2>Autres articles</h2>
+			<div class="row col-md-12 trends">
+				<h2>Nos meilleurs articles !</h2>
 				<ul>
 					<li>La Xbox One S VS la nouvelle PS4</li><hr>
-					<li>La Xbox One S VS la nouvelle PS4</li><hr>
-					<li>La Xbox One S VS la nouvelle PS4</li><hr>
-					<li>La Xbox One S VS la nouvelle PS4</li><hr>
-					<li>La Xbox One S VS la nouvelle PS4</li>
+					<li>La domotique pour tous avec Arduino</li><hr>
+					<li>Les 5 meilleurs applis pour se préparer à la rentrée</li><hr>
+					<li>Notre présentation du nouveau Mac</li><hr>
+					<li>Performance des nouvelles GTX 10 portables</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+	<a href="#top"><div class="scrollTop">
+		<i class="fa fa-chevron-up fa-3x" aria-hidden="true"></i>
+	</div></a>
 	<?php include("footer.php"); ?>
 </body>
 </html>

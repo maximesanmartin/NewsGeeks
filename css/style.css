@@ -61,6 +61,13 @@ nav, #title{
 	border: none;
 }
 
+.navbar-header > .navbar-brand{
+	color: #EEE;
+	font-size: 25;
+	font-weight: bold;
+	display: inline;
+}
+
 .navbar-inverse .navbar-toggle{
 	color: inherit;
 	border-color: white;
@@ -143,6 +150,13 @@ ul{
 /* ============================================================== */
 /* ======================== MEDIA QUERIES ======================= */
 /* ============================================================== */
+
+@media (min-width: 1200px) {
+	.container {
+	    width: 80%;
+	}
+}
+
 
 @media screen and (max-width: 1000px){
 	/* ========================= NAVBAR ========================= */

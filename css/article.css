@@ -51,11 +51,6 @@
 	color: #333;
 	top: 15%;
 	left: -70px;
-	transition: all ease 0.6s;
-}
-
-.author:hover{
-	background-color: #e8e8e8;
 }
 
 .author .img-circle{
@@ -120,13 +115,32 @@
 
 .twitter{
 	background-color: white;
-	max-height: 1000px;
+	max-height: 500px;
 	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 .trends{
 	background-color: #fff;
 	margin-top: 20px;
+}
+
+.trends li{
+	font-size: 18;
+}
+
+/* =========================== SCROLLTOP ======================== */
+.scrollTop{
+	padding: 20px;
+	background-color: #C93030;
+	border-radius: 5%;
+	position: fixed;
+	right: 20;
+	bottom: 20;
+}
+
+.scrollTop i{
+	color: #eee;
 }
 
 /* ============================================================== */

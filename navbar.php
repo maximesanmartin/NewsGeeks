@@ -1,4 +1,4 @@
-<div class="head">
+<div class="head" id="top">
 	<div id="title"><img src="img/logo.png">NewsGeeks</div>
 </div>
 <nav class="navbar navbar-inverse">
@@ -10,6 +10,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
+      <a class="navbar-brand" href=".">NewsGeeks</a>
 		</div>
 		<div id="navbar" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav">
@@ -25,6 +26,8 @@
   				<li>
   					<a href="page.php?id=high-tech">HIGH-TECH</a>
   				</li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
   				<li>
   					<a href="contact.php">CONTACT</a>
   				</li>
