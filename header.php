@@ -7,6 +7,7 @@
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>

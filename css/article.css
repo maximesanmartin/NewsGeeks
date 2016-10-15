@@ -1,3 +1,7 @@
+.sidebar > *, .article{
+	box-shadow: 7px 7px 4px #CCC;
+}
+
 /* ======================== ARTICLE ======================= */
 
 .article p{
@@ -131,9 +135,9 @@
 
 /* =========================== SCROLLTOP ======================== */
 .scrollTop{
-	padding: 20px;
+	padding: 12px;
 	background-color: #C93030;
-	border-radius: 5%;
+	border-radius: 9%;
 	position: fixed;
 	right: 20;
 	bottom: 20;

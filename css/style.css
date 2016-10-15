@@ -151,12 +151,17 @@ ul{
 /* ======================== MEDIA QUERIES ======================= */
 /* ============================================================== */
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	.container {
-	    width: 80%;
+	    width: 1200px;
 	}
 }
 
+@media screen and (min-width: 1600px) {
+	.container {
+	    width: 1600px;
+	}
+}
 
 @media screen and (max-width: 1000px){
 	/* ========================= NAVBAR ========================= */
@@ -206,7 +211,7 @@ ul{
 	/* =========================== NAVBAR ======================== */
 
 	.navbar-nav li{
-		padding: 20 0 20 0;
+		padding: 20 0;
 	} 
 
 	.navbar-nav a{
