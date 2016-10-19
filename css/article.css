@@ -1,5 +1,6 @@
 .sidebar > *, .article{
 	box-shadow: 7px 7px 4px #CCC;
+	margin-bottom: 20px;
 }
 
 /* ======================== ARTICLE ======================= */
@@ -138,6 +139,7 @@
 	padding: 12px;
 	background-color: #C93030;
 	border-radius: 9%;
+	border: 1px solid #eee;
 	position: fixed;
 	right: 20;
 	bottom: 20;
