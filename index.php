@@ -6,12 +6,48 @@
 <div class="container home">
 	<div class="col-md-8 articles">
 		<div class="col-md-6 article">
+			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
+				<h1>Les grandes avancées du lecteur de Spotify</h1>
+			</div>
+			<div class="article_body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat... <a href="#">Lire la suite</a></p>
+			</div>
 		</div>
 		<div class="col-md-6 article">
+			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
+				<h1>Les grandes avancées du lecteur de Spotify</h1>
+			</div>
+			<div class="article_body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat... <a href="#">Lire la suite</a></p>
+			</div>
 		</div>
 		<div class="col-md-6 article">
+			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
+				<h1>Les grandes avancées du lecteur de Spotify</h1>
+			</div>
+			<div class="article_body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat... <a href="#">Lire la suite</a></p>
+			</div>
 		</div>
 		<div class="col-md-6 article">
+			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
+				<h1>Les grandes avancées du lecteur de Spotify</h1>
+			</div>
+			<div class="article_body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat... <a href="#">Lire la suite</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="col-md-4 sidebar">
