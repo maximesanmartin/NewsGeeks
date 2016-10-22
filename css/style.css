@@ -85,7 +85,7 @@ nav, #title{
 	margin-left: 0;
 }
 
-/* ======================= HEADER ======================= */
+/* ========================== HEADER ========================== */
 
 .row{
 	width: 100%;
@@ -113,6 +113,15 @@ nav, #title{
 	color: #FFF;
 	vertical-align: middle;
 	display: inline-block;
+}
+
+/* ========================== SIDEBAR =========================== */
+
+.twitter{
+	background-color: white;
+	max-height: 500px;
+	overflow: scroll;
+	overflow-x: hidden; 
 }
 
 /* ========================== FOOTER ============================ */
@@ -179,6 +188,16 @@ ul{
 
 	#title{
 		margin-left: 50;
+	}
+
+	/* ========================= SIDEBAR ========================== */
+
+	.sidebar{
+		padding: 0;
+	}
+
+	.twitter{
+		overflow: hidden;
 	}
 }
 

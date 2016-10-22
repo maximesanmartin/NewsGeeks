@@ -1,0 +1,38 @@
+.contact > *{
+	background-color: #fff;
+	box-shadow: 7px 7px 4px #CCC;
+	margin-bottom: 20px;
+}
+
+textarea{
+	width: 100%;
+	min-height: 200px;
+	resize: vertical;
+}
+
+input{
+	width: 50%;
+	padding: 6;
+}
+
+.input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10;
+	margin-bottom: 10;
+}
+
+.btn{
+	width: 200px;
+	border-radius: 5%;
+	margin-bottom: 10;
+}
+
+.sidebar > *{
+	padding: 2px;
+}
+
+.sidebar img{
+	width: 70px;
+	margin: 5px;
+}
