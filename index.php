@@ -5,50 +5,21 @@
 <?php include("navbar.php"); ?>
 <div class="container home">
 	<div class="col-md-9 articles">
-		<div class="col-md-6 article">
-			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
-				<h1>Les grandes avancées du lecteur de Spotify</h1>
+		<?php if(have_posts()) : ?>
+			<?php $posts = get_posts('orderby=date&numberposts=4'); ?>
+			<?php while(have_posts()) : the_post(); // SET THE CURRENT ARTICLE PROPERTIES ?> 
+			<div class="col-md-6 article">
+				<a href="<?php the_permalink(); ?>">
+					<div class="main_image" style="background-image: url('<?php if(has_post_thumbnail()) the_post_thumbnail_url(); ?>')">
+						<h1><?php the_title(); ?></h1>
+					</div>
+				</a>
+				<div class="article_body">
+					<?php the_content("Lire la suite"); ?>
+				</div>
 			</div>
-			<div class="article_body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat... <a href="#">Lire la suite</a></p>
-			</div>
-		</div>
-		<div class="col-md-6 article">
-			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
-				<h1>Les grandes avancées du lecteur de Spotify</h1>
-			</div>
-			<div class="article_body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat... <a href="#">Lire la suite</a></p>
-			</div>
-		</div>
-		<div class="col-md-6 article">
-			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
-				<h1>Les grandes avancées du lecteur de Spotify</h1>
-			</div>
-			<div class="article_body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat... <a href="#">Lire la suite</a></p>
-			</div>
-		</div>
-		<div class="col-md-6 article">
-			<div class="main_image" style="background-image: url('img/open-graph-default.png');">
-				<h1>Les grandes avancées du lecteur de Spotify</h1>
-			</div>
-			<div class="article_body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat... <a href="#">Lire la suite</a></p>
-			</div>
-		</div>
+			<?php endwhile; ?> 
+		<?php endif; ?>
 	</div>
 	<div class="col-md-3 sidebar">
 		<div class="col-md-12 twitter">

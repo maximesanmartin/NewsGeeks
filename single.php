@@ -1,6 +1,6 @@
 <?php get_header(); ?>
-<link rel="stylesheet" type="text/css" href="css/article.css">
-<script type="text/javascript" src="js/article.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/article.css">
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/article.js"></script>
 
 <?php include("navbar.php"); ?>
 <div class="container">

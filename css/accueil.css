@@ -39,6 +39,10 @@
 	margin: 0;
 }
 
+.article_body{
+	background-color: #fff;
+}
+
 @media screen and (min-width: 1200px) {
 	.container {
 	    width: 90%;
