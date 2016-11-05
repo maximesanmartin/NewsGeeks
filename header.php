@@ -1,7 +1,9 @@
+<html>
 <head> 
-	<title>NewsGeeks - Le site des nouvelles technologies</title>
+	<title><?php bloginfo('name') ?><?php if ( is_404() ) : ?> - <?php _e('Not Found') ?><?php elseif ( is_home() ) : ?> - <?php bloginfo('description') ?><?php else : ?><?php wp_title() ?><?php endif ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="icon" href="<?php bloginfo( 'template_directory' ); ?>/img/ng.png">
 	<!-- JS -->
@@ -14,5 +16,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet"> 
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
 	<link href="<?php bloginfo( 'template_directory' ); ?>/css/bootstrap.min.css" rel="stylesheet">
-	<link href='<?php bloginfo( 'template_directory' ); ?>/style.css' rel='stylesheet' type='text/css'/>
+	<link href="<?php bloginfo('stylesheet_url'); ?>" rel='stylesheet' type='text/css'/>
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<?php wp_head(); ?>   
+	<?php wp_get_archives('type=monthly&format=link'); ?>
 </head>
+<body>

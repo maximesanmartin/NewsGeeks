@@ -40,3 +40,6 @@
 		<div class="col-md-12 copyright"><hr>NewsGeeks 2012-2016 - Tous droits réservés. Site web développé sous HTML5/CSS3, JQuery et Bootstrap par Maxime SANMARTIN</div>
 	</div>
 </footer>
+<?php wp_footer(); ?>
+</body>
+</html>
