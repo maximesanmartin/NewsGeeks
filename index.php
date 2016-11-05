@@ -1,7 +1,7 @@
-<html>
-<?php include("header.php"); ?>
-<link rel="stylesheet" type="text/css" href="css/accueil.css">
-<script type="text/javascript" src="js/accueil.js"></script>
+<html>   
+<?php get_header(); ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/accueil.css">
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/accueil.js"></script>
 <body>
 <?php include("navbar.php"); ?>
 <div class="container home">
@@ -58,6 +58,6 @@
 		</div>
 	</div>
 </div>
-<?php include("footer.php"); ?>
+<?php get_footer(); ?>
 </body>
 </html>

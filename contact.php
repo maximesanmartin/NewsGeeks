@@ -1,5 +1,5 @@
 <html>
-<?php include("header.php"); ?>
+<?php get_header(); ?>
 <link rel="stylesheet" type="text/css" href="css/contact.css">
 <body>
 <?php include("navbar.php"); ?>
@@ -19,6 +19,6 @@
 		<a href="https://www.twitch.tv/newsgeeks_gaming"><img src="img/twitch.png"/></a>
 	</div>
 </div>
-<?php include("footer.php"); ?>
+<?php get_footer(); ?>
 </body>
 </html>

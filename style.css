@@ -94,7 +94,6 @@ nav, #title{
 
 .head{
 	height: 400px;
-	background-image: url("../img/banner.jpg");
 	-moz-box-align: end;
     align-items: flex-end;
     background-position: 50% center;

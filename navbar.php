@@ -1,5 +1,5 @@
-<div class="head" id="top">
-	<div id="title"><img src="img/logo.png">NewsGeeks</div>
+<div class="head" id="top" style="background-image: url('<?php bloginfo( "template_directory" ); ?>/img/banner.jpg');">
+	<div id="title"><img src="<?php bloginfo( 'template_directory' ); ?>/img/logo.png">NewsGeeks</div>
 </div>
 <nav class="navbar navbar-inverse">
 	<div class='container'>
