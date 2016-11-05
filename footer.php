@@ -6,15 +6,11 @@
   				<li>
   					<a href="index.php">ACCUEIL</a>
   				</li>
-  				<li>
-  					<a href="page.php?id=jeux">JEUX</a>
-  				</li>
-  				<li>
-  					<a href="page.php?id=cinema">CINEMA</a>
-  				</li>
-  				<li>
-  					<a href="page.php?id=high-tech">HIGH-TECH</a>
-  				</li>
+  				<?php foreach (get_categories(array("exclude" => 1)) as $category) { ?>
+	              <li>
+	                <a href="<?php echo get_category_link( $category->term_id )?>"><?php echo strtoupper($category->name) ?></a>
+	              </li>
+	            <?php } ?>
   				<li>
   					<a href="contact.php">CONTACT</a>
   				</li>
