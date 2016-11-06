@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/contact.css">
 
 <?php include("navbar.php"); ?>
 <div class="container" style="text-align: center">

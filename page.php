@@ -1,14 +1,12 @@
 <?php get_header(); ?>
-<?php $page = get_page(get_the_ID(), ARRAY_A); ?>
-    <!-- INFOS -->
-    <div id="marketing_title">
-      <?php
-          echo get_the_title(get_the_ID());
-      ?>
-    </div>
-    <?php
-          echo $page['post_content'];
-    ?>
-    <!--<?php edit_post_link('Modifier cette page', '<p>', '</p>'); ?>-->
-    <br><br>
-    <?php get_footer() ?>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/contact.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/about.css">
+
+<?php include("navbar.php"); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+the_content();
+endwhile; else: ?>
+<p>Désolé, aucune page existante...</p>
+<?php endif; ?>
+
+<?php get_footer(); ?>

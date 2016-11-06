@@ -24,10 +24,10 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
   				<li>
-  					<a href="contact.php">CONTACT</a>
+  					<a href="/newsgeeks_wp/contact">CONTACT</a>
   				</li>
   				<li>
-  					<a href="about.php">A PROPOS</a>
+  					<a href="/newsgeeks_wp/about">A PROPOS</a>
   				</li>
   			</ul>
 		</div>

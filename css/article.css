@@ -76,6 +76,14 @@
 	margin: 10px;
 }
 
+.navigation a[rel="prev"]{
+	float : left;
+}
+
+.navigation a[rel="next"]{
+	float : right;
+}
+
 /* ====================== COMMENTS ===================== */
 
 .comments textarea{

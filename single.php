@@ -19,7 +19,7 @@
 		</p>
 		<?php endwhile; ?>
 		<!-- lien vers post suivant -->
-		<?php previous_post_link() ?> <?php next_post_link() ?>
+		<div class="navigation"><p><?php previous_post_link("%link", "Article précédent : <strong>%title</strong>"); ?><?php next_post_link("%link", "Article suivant : <strong>%title</strong>"); ?></p></div><br/>
 		<?php endif; ?>
 		<div class="comments">
 			<h2>Commentaires</h2>
