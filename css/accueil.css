@@ -41,6 +41,7 @@
 
 .article_body{
 	background-color: #fff;
+	height: 100px;
 }
 
 @media screen and (min-width: 1200px) {

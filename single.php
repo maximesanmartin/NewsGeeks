@@ -1,11 +1,12 @@
 <?php get_header(); ?>
+
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_directory' ); ?>/css/article.css">
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/article.js"></script>
 
 <?php include("navbar.php"); ?>
 <div class="container">
 	<div class="col-md-8 article">
-		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
+		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); wpb_set_post_views(get_the_ID()); ?>
 		<div class="main_image" style="background-image: url('<?php if(has_post_thumbnail()) the_post_thumbnail_url(); ?>');">
 			<div class="author"><?php echo get_avatar(get_the_author_meta( 'ID' ), 150, null, null, $args=array('class' => 'img-circle')) ?><div class="author_name"><?php the_author() ?></div></div>
 			<h1><?php the_title(); ?></h1>
@@ -24,22 +25,6 @@
 			<h2>Commentaires</h2>
 			<div class="col-md-12">
 				<?php comments_template(); ?>
-				<!--<div class="col-md-12 comment">
-					<h4>Maxime Sanmartin</h4>
-					<div>
-						<img src="img/max.jpg" class="img-circle">
-						<p>Très bon article ! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					</div>
-				</div>-->
-				<h3>Votre commentaire</h3>
-				<input class="input" type="text" placeholder="Pseudo (Anonyme par défaut)"></input>
-				<textarea class="input" placeholder="Votre commentaire ici (Supporte le balisage HTML)"></textarea>
-				<button class="btn btn-primary">Envoyer</button>
 			</div>
 		</div>
 	</div>
@@ -51,11 +36,14 @@
 		<div class="row col-md-12 trends">
 			<h2>Nos meilleurs articles !</h2>
 			<ul>
-				<li>La Xbox One S VS la nouvelle PS4</li><hr>
-				<li>La domotique pour tous avec Arduino</li><hr>
-				<li>Les 5 meilleurs applis pour se préparer à la rentrée</li><hr>
-				<li>Notre présentation du nouveau Mac</li><hr>
-				<li>Performance des nouvelles GTX 10 portables</li>
+				<?php
+				$popularpost = new WP_Query( array( 'posts_per_page' => 5, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+				while ( $popularpost->have_posts() ) : $popularpost->the_post();?>
+
+					<li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li><hr>
+
+				<?php endwhile;
+				?>
 			</ul>
 		</div>
 	</div>

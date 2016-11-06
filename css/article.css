@@ -24,8 +24,8 @@
 	padding: 0 20;
 }
 
-.article a{
-	text-decoration: none;
+.article a, .sidebar a{
+	color: #111;
 }
 
 .article .main_image{
@@ -99,7 +99,6 @@
 }
 
 .comment div .img-circle{
-	width: 12%;
 	border: 3px solid #ddd;
 }
 
