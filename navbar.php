@@ -18,7 +18,7 @@
   				</li>
           <?php foreach (get_categories(array("exclude" => 1)) as $category) { ?>
             <li>
-              <a href="<?php echo get_category_link( $category->term_id )?>"><?php echo strtoupper($category->name) ?></a>
+              <a href="<?php echo get_category_link( $category->term_id )?>"><?php echo mb_strtoupper($category->name) ?></a>
             </li>
           <?php } ?>
         </ul>

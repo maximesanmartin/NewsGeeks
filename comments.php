@@ -19,19 +19,6 @@ $oddcomment = 'alt';
 
 <!-- You can start editing here. -->
 
-<!--<div class="col-md-12 comment">
-	<h4>Maxime Sanmartin</h4>
-	<div>
-		<img src="img/max.jpg" class="img-circle">
-		<p>Très bon article ! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-	</div>
-</div>-->
-
 <div class="col-md-12 comment">
 <?php if ($comments) : ?>
 
@@ -82,7 +69,7 @@ $oddcomment = 'alt';
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 <?php if ( $user_ID ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="D&eacute;connex&eacute; de ce compte">D&eacute;connexion &raquo;</a></p>
+<p>Connecté en tant que <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="D&eacute;connex&eacute; de ce compte">D&eacute;connexion &raquo;</a></p>
 
 <?php else : ?>
 
