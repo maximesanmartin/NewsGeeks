@@ -3,7 +3,7 @@
 }
 
 .article{
-	margin: 5 0;
+	margin: 20 0;
 }
 
 .article p{
@@ -58,5 +58,9 @@
 
 	.container{
 		width: 100%;
+	}
+
+	.main_image{
+		height: 400px;
 	}
 }
