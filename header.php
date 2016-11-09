@@ -8,6 +8,7 @@
 	<link rel="icon" href="<?php bloginfo( 'template_directory' ); ?>/img/ng.png">
 	<!-- JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/bootstrap.min.js"></script>
 	<script src="<?php bloginfo( 'template_directory' ); ?>/js/script.js"></script>
 	<!-- CSS -->
@@ -15,6 +16,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300" rel="stylesheet"> 
 	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link href="<?php bloginfo( 'template_directory' ); ?>/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel='stylesheet' type='text/css'/>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />

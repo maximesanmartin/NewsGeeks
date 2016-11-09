@@ -7,6 +7,10 @@ function displayNavInfos(){
 }
 
 $(function(){
+	$( ".article" ).hide();
 	$(document).ready(displayNavInfos);
+	$(document).ready(function(){
+		$(".article").show("fold", {}, 500);
+	})
 	$(window).resize(displayNavInfos);
 });

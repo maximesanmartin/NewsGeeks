@@ -8,14 +8,14 @@
   				</li>
   				<?php foreach (get_categories(array("exclude" => 1)) as $category) { ?>
 	              <li>
-	                <a href="<?php echo get_category_link( $category->term_id )?>"><?php echo strtoupper($category->name) ?></a>
+	                <a href="<?php echo get_category_link( $category->term_id )?>"><?php echo mb_strtoupper($category->name) ?></a>
 	              </li>
 	            <?php } ?>
   				<li>
-  					<a href="contact.php">CONTACT</a>
+  					<a href="/newsgeeks_wp/contact">CONTACT</a>
   				</li>
   				<li>
-  					<a href="about.php">A PROPOS</a>
+  					<a href="/newsgeeks_wp/about">A PROPOS</a>
   				</li>
   			</ul>
 		</div>
