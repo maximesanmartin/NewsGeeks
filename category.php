@@ -29,5 +29,9 @@
 			<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM">Tweets de NewsGeeks_FLM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</div>
+	<div class="col-md-9">
+		<div class="nav-previous alignleft"><?php next_posts_link( '<<< Articles plus anciens' ); ?></div>
+		<div class="nav-next alignright"><?php previous_posts_link( 'Articles plus récents >>>' ); ?></div>
+	</div>
 </div>
 <?php get_footer(); ?>

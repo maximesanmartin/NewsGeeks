@@ -6,7 +6,6 @@
 <div class="container home">
 	<div class="col-md-9 articles">
 		<?php if(have_posts()) : ?>
-			<?php $posts = get_posts('orderby=date&numberposts=4'); ?>
 			<?php while(have_posts()) : the_post(); // SET THE CURRENT ARTICLE PROPERTIES ?> 
 			<div class="col-md-6 article">
 				<a href="<?php the_permalink(); ?>">
@@ -26,6 +25,10 @@
 			<h2>Actu Twitter</h2>
 			<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM">Tweets de NewsGeeks_FLM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
+	</div>
+	<div class="col-md-9">
+		<div class="nav-previous alignleft"><?php next_posts_link( '<<< Articles plus anciens' ); ?></div>
+		<div class="nav-next alignright"><?php previous_posts_link( 'Articles plus récents >>>' ); ?></div>
 	</div>
 </div>
 <?php get_footer(); ?>

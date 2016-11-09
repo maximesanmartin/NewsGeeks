@@ -114,6 +114,20 @@ nav, #title{
 	display: inline-block;
 }
 
+/* ========================= PAGINATION ========================= */
+
+.nav-previous a, .nav-next a{
+	color: #333;
+}
+
+.alignleft{
+	float: left;
+}
+
+.alignright{
+	float: right;
+}
+
 /* ========================== SIDEBAR =========================== */
 
 .twitter{
