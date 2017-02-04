@@ -165,6 +165,10 @@ ul{
 	color: #C93030;
 }
 
+.social_icons a:focus, .social_icons a:hover{
+	color: #fff;
+}
+
 .copyright{
 	text-align: center;
 }
