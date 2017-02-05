@@ -1,6 +1,6 @@
 <html>
 <head> 
-	<title><?php bloginfo('name') ?><?php if ( is_404() ) : ?> - <?php _e('Page non trouvée') ?><?php elseif ( is_home() ) : ?> - <?php bloginfo('description') ?><?php else : ?> - <?php wp_title() ?><?php endif ?></title>
+	<title><?php if ( is_404() ) : ?> <?php bloginfo('name') ?> - <?php _e('Page non trouvée') ?><?php elseif ( is_home() ) : ?> <?php bloginfo('name') ?> - <?php bloginfo('description') ?><?php else : ?><?php wp_title() ?><?php endif ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
