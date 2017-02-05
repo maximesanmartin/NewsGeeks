@@ -22,11 +22,20 @@
     align-items: flex-end;
     background-position: 50% center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     min-height: 12rem;
     position: relative;
     width: 100%;
+    -moz-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+	-ms-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+	-o-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+	-webkit-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+    transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+}
+
+.main_image:hover{
+	background-size: 115%;
 }
 
 .main_image h1{
