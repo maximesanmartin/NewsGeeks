@@ -14,7 +14,7 @@
 					</div>
 				</a>
 				<div class="article_body">
-					<?php the_permalink(); the_content("Lire la suite"); ?>
+					<?php the_content("Lire la suite"); ?>
 				</div>
 			</div>
 			<?php endwhile; ?> 
