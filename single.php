@@ -4,7 +4,7 @@
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/article.js"></script>
 
 <?php include("navbar.php"); ?>
-<div class="container">
+<div id="page-content" class="container">
 	<div class="col-md-8 article">
 		<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); wpb_set_post_views(get_the_ID()); ?>
 		<div class="main_image" style="background-image: url('<?php if(has_post_thumbnail()) the_post_thumbnail_url(); ?>');">

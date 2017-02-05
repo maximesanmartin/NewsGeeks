@@ -3,7 +3,7 @@
 <script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/accueil.js"></script>
 
 <?php include("navbar.php"); ?>
-<div class="container home">
+<div id="page-content" class="container home">
 	<div class="col-md-9 articles">
 		<h1><?php single_cat_title(); ?></h1>
 		<?php if(have_posts()) : ?>
