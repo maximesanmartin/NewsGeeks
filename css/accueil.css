@@ -3,7 +3,7 @@
 }
 
 .article{
-	margin: 20 0;
+	margin: 0;
 }
 
 .article p{
@@ -35,7 +35,7 @@
 }
 
 .main_image:hover{
-	background-size: 115%;
+	background-size: 105%;
 }
 
 .main_image h1{

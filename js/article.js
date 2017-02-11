@@ -8,16 +8,19 @@ $(function(){
 		if(heigtFromScroll > bannerSize){
 			$( ".navbar" ).css("position", "fixed" );
 			$( ".navbar" ).css("width", "100%" );
-			$( ".navbar" ).css("padding", "10 0" );
 			$( ".navbar" ).css("top", "0" );
 			scrollToTop.fadeIn("fast");
 		}
 		else{
 			$( ".navbar" ).css("position", "relative" );
 			$( ".navbar" ).css("width", "auto" );
-			$( ".navbar" ).css("padding", "0" );
 			$( ".navbar" ).css("top", "auto" );
 			scrollToTop.fadeOut("fast");
 		}
 	});
+
+	$('.aligncenter').each(function(){
+		var p = $(this).parent();
+		p.css('text-align', 'center');
+	})
 });

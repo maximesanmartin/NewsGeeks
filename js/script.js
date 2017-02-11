@@ -72,6 +72,6 @@ $(function(){
     });
 
     $('.navbar-toggle .button-navbar').click(function(){
-    	$(this).toggleClass('fa-bars fa-times');
+    	$(this).toggleClass('fa-bars fa-times');    	
     });
 });
