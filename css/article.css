@@ -196,5 +196,11 @@
 	.author .img-circle{
 		border: 4px solid #eee;
 		border-radius: 0;
+	    height: 100;
+	    width: 100;
+	}
+
+	.fa-3x{
+		font-size: 2em;
 	}
 }

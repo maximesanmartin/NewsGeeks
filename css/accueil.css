@@ -27,11 +27,11 @@
     min-height: 12rem;
     position: relative;
     width: 100%;
-    -moz-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
-	-ms-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
-	-o-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
-	-webkit-transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
-    transition: background-size 1s cubic-bezier(.49,.09,.45,.74);
+    -moz-transition: background-size 0.8s linear;
+	-ms-transition: background-size 0.8s linear;
+	-o-transition: background-size 0.8s linear;
+	-webkit-transition: background-size 0.8s linear;
+    transition: background-size 0.8s linear;
 }
 
 .main_image:hover{
@@ -76,9 +76,5 @@
 
 	.container{
 		width: 100%;
-	}
-
-	.main_image{
-		height: 400px;
 	}
 }

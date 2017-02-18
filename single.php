@@ -29,9 +29,9 @@
 		</div>
 	</div>
 	<div class="col-md-4 sidebar">
-		<div class="col-md-12 twitter">
+		<div class="col-md-12 twitter" style="background-color: white;">
 			<h2>Actu Twitter</h2>
-			<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM">Tweets de NewsGeeks_FLM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" data-dnt="true" height="500px" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM" data-chrome="noborders noheader nofooter noscrollbar"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 		<div class="row col-md-12 trends">
 			<h2>Nos meilleurs articles !</h2>

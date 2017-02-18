@@ -22,8 +22,8 @@
 	</div>
 	<div class="col-md-3 sidebar">
 		<div class="col-md-12 twitter">
-			<h2>Actu Twitter</h2>
-			<a class="twitter-timeline" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM">Tweets de NewsGeeks_FLM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
+			<a class="twitter-timeline" height="500px" data-dnt="true" data-theme="light" data-link-color="#E95F28" href="https://twitter.com/NewsGeeks_FLM" data-chrome="transparent noborders noheader nofooter noscrollbar"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 	</div>
 	<div class="col-md-9">
