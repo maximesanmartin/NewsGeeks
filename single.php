@@ -12,12 +12,12 @@
 			<h1><?php the_title(); ?></h1>
 		</div>
 		<div class="info">
-			<i class="fa fa-calendar" aria-hidden="true">&nbsp;<?php the_time('j F Y'); ?></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tags" aria-hidden="true"> <?php the_category(','); ?> </i>	
+			<i class="fa fa-calendar" aria-hidden="true">&nbsp;<?php the_time('j F Y'); ?></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sitemap" aria-hidden="true"> <?php the_category(','); ?> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tags" aria-hidden="true"> <?php the_tags('', ',', ''); ?></i>	
 		</div>
 		<p>
 		<?php the_content(); ?>
 		</p>
-		<?php endwhile; ?>
+		<?php endwhile; ?> 
 		<!-- lien vers post suivant -->
 		<div class="navigation"><p><?php previous_post_link("%link", "Article précédent : <strong>%title</strong>"); ?><?php next_post_link("%link", "Article suivant : <strong>%title</strong>"); ?></p></div><br/>
 		<?php endif; ?>
