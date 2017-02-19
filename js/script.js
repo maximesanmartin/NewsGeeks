@@ -21,6 +21,7 @@ $(function(){
     // Enter your ids or classes
     var toggler = '.navbar-toggle';
     var pagewrapper = '#page-content';
+    var pagewrapper2 = '#top';
     var navigationwrapper = '.navbar-header';
     var menuwidth = '100%'; // the menu inside the slide menu itself
     var slidewidth = '60%';
@@ -44,6 +45,10 @@ $(function(){
             left: selected ? '0px' : slidewidth
         });
 
+        $(pagewrapper2).stop().animate({
+            left: selected ? '0px' : slidewidth
+        });
+
         $(navigationwrapper).stop().animate({
             left: selected ? '0px' : slidewidth
         });
@@ -53,13 +58,13 @@ $(function(){
         $('#slidemenu').toggleClass('slide-active');
 
 
-        $('#page-content, .navbar, body, .navbar-header').toggleClass('slide-active');
+        $('#page-content, #top, .navbar, body, .navbar-header').toggleClass('slide-active');
 
 
     });
 
 
-    var selected = '#slidemenu, #page-content, body, .navbar, .navbar-header';
+    var selected = '#slidemenu, #page-content, #top, body, .navbar, .navbar-header';
 
 
     $(window).on("resize", function () {
