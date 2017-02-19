@@ -77,4 +77,12 @@
 	.container{
 		width: 100%;
 	}
+	.article_body{
+		height: auto;
+	}
+
+	.main_image h1{
+		font-size: 25;	
+	}
+
 }

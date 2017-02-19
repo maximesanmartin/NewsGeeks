@@ -375,6 +375,10 @@ ul{
     #slide-nav .navbar-form .btn {
         width: 100%
     }
+
+    #page-content {
+    	padding: 0;
+    }
 }
 
 @media (min-width:768px) { 

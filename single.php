@@ -12,7 +12,7 @@
 			<h1><?php the_title(); ?></h1>
 		</div>
 		<div class="info">
-			<i class="fa fa-calendar" aria-hidden="true">&nbsp;<?php the_time('j F Y'); ?></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sitemap" aria-hidden="true"> <?php the_category(','); ?> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tags" aria-hidden="true"> <?php the_tags('', ',', ''); ?></i>	
+			<i class="fa fa-calendar" aria-hidden="true">&nbsp;<?php the_time('j F Y'); ?></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-sitemap" aria-hidden="true"> <?php the_category(','); ?> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-tags" aria-hidden="true"> <?php the_tags('', ', ', ''); ?></i>	
 		</div>
 		<p>
 		<?php the_content(); ?>

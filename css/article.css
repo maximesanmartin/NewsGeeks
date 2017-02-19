@@ -203,4 +203,8 @@
 	.fa-3x{
 		font-size: 2em;
 	}
+
+	.article > *{
+		padding: 0 10;
+	}
 }
