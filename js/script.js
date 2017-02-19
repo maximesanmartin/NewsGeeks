@@ -59,7 +59,7 @@ $(function(){
 
 
         $('#page-content, #top, .navbar, body, .navbar-header').toggleClass('slide-active');
-
+        $('.navbar-toggle .button-navbar').toggleClass('fa-bars fa-times'); 
 
     });
 
@@ -74,9 +74,5 @@ $(function(){
         }
 
 
-    });
-
-    $('.navbar-toggle .button-navbar').click(function(){
-    	$(this).toggleClass('fa-bars fa-times');    	
     });
 });
