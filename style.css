@@ -382,7 +382,7 @@ ul{
 }
 
 @media (min-width:768px) { 
-    #page-content {
+    #page-content, #top {
         left: 0!important
     }
     .navbar.navbar-fixed-top.slide-active {
